@@ -5,8 +5,8 @@ html {
 body {
   font-size: 1.6rem;
   margin: 0;
-  background-color: black;
-  color: #fff;
+  /* background-color: black; */
+  color: black;
 }
 .hero,
 nav,
@@ -24,6 +24,7 @@ h3 {
 p {
   text-wrap: pretty;
   line-height: 2;
+  font-size: 2rem;
 }
 nav {
   position: sticky;
@@ -74,6 +75,7 @@ h1 {
   position: relative;
   padding: 0.5em 1em;
   cursor: pointer;
+  color: #fff;
 }
 .btn:before,
 .btn:after {
@@ -153,22 +155,23 @@ nav:after {
   animation-range-end: 100vh;
 }
 nav a {
-  color: #fff;
+  color: blue;
   text-decoration: none;
   white-space: nowrap;
   display: flex;
   transition: color 0.3s ease;
+  font-weight: 700;
 }
-.nav-link{
+.nav-link {
   border-radius: 10px;
 }
 .nav-link:hover a {
-  background: linear-gradient(in hsl longer hue 50deg, rgb(107, 53, 53) 0 0);
+  background: linear-gradient(in hsl longer hue 20deg, #f66 0 0);
   background-clip: text;
   color: #0000;
 }
 .nav-link:hover {
-  background-color: #fff;
+  background-color: #251515;
 }
 
 .container {
@@ -178,12 +181,11 @@ nav a {
 }
 .pic {
   width: 25rem;
-  /* height: 62rem; */
+  height: 32rem;
   transition: all 0.6s ease;
 }
 .container img {
   width: 100%;
-  margin-top: 100px;
 }
 .pic:hover {
   transform: translateY(6rem);
@@ -198,5 +200,25 @@ nav a {
 }
 .pic:hover ~ .pic {
   transform: translateX(230px);
-  opacity: 0.4;
+  opacity: 0.2;
+}
+.box_duoi_phai {
+  background-color: rgba(0, 110, 255, 0.295);
+  width: 26rem;
+  height: 30rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  color: #000;
+  border-radius: 20px;
+}
+.box_duoi_phai li {
+  display: flex;
+}
+.footer-box{
+  width: 65vw;
+  height: 20rem;
+  min-width: 800px;
+  background-color: #e389f5;
+  margin: 0 auto;
 }
