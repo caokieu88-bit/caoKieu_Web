@@ -215,15 +215,53 @@ nav a {
 
 h2 {
   text-align: center;
+  font-size: 3rem;
 }
 .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 3.5rem auto;
+  display: flex;
+}
+.list_hinh {
+  width: 17rem;
+  height: 100%;
+  background: #b5d5df73;
+  overflow: auto;
+  overscroll-behavior: none;
+}
+.hinh {
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+  margin-top: 14%;
+  text-align: center;
+}
+.box_hien_thi {
+  background-color: rgba(250, 235, 215, 0.5);
+  height: 99.5%;
+  width: 70%;
+  border: 2px solid gray;
+  text-align: center;
+}
+.hinh img {
+  height: 100%;
+}
+.box_hien_thi img {
+  height: 100%;
+}
+.hinh img:hover {
+  border: 4px solid rgba(194, 22, 22, 0.733);
+}
+
+/*.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .pic {
   width: 20rem;
-  /* height: 32rem; */
+ 
   transition: all 0.6s ease;
 }
 .container img {
@@ -243,7 +281,7 @@ h2 {
 .pic:hover ~ .pic {
   transform: translateX(26rem);
   opacity: 0.2;
-}
+} */
 .box_duoi_phai {
   background-color: rgba(0, 110, 255, 0.295);
   width: 26rem;
