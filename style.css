@@ -283,12 +283,12 @@ h2 {
   opacity: 0.2;
 } */
 .box_duoi_phai {
-  background-color: rgba(0, 110, 255, 0.295);
+  background-color: rgb(189, 215, 248);
   width: 26rem;
   height: 30rem;
   position: fixed;
-  bottom: 5rem;
-  right: 5rem;
+  top: 7rem;
+  right: 1rem;
   color: #000;
   border-radius: 0 50px;
   font-size: 2rem;
@@ -303,6 +303,19 @@ h2 {
   width: 70vw;
   min-width: 80rem;
   margin: 66vh auto 0;
+}
+.dky {
+  display: inline-block;
+  height: 3rem;
+  background-color: #0f49b6;
+  padding: 1rem;
+  align-content: center;
+  font-weight: 700;
+  /* color: #fff; */
+}
+.dky a {
+  text-decoration: none;
+  color: #fff;
 }
 .chiTiet {
   width: 100%;
