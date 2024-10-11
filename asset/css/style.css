@@ -86,7 +86,7 @@ h1 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(in hsl longer hue 45deg, #f66 0 0);
+  background: linear-gradient(in hsl longer hue 45deg, #f66 0 0); 
   z-index: -1;
   clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
 }
@@ -216,6 +216,11 @@ nav a {
 h2 {
   text-align: center;
   font-size: 3rem;
+  color: ;
+  padding-top: 6rem;
+  /* background: linear-gradient(in hsl longer hue 20deg, #f66 0 0);
+  background-clip: text;
+  color: #0000; */
 }
 .container {
   width: 80vw;
@@ -284,38 +289,52 @@ h2 {
 } */
 .box_duoi_phai {
   background-color: rgb(189, 215, 248);
-  width: 26rem;
-  height: 30rem;
+  width: 13rem;
+  height: 70rem;
   position: fixed;
   top: 7rem;
   right: 1rem;
-  color: #000;
-  border-radius: 0 50px;
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 10px;
+
+  border-radius: 30px;
+
+  text-align: center;
 }
 .box_duoi_phai li {
-  display: flex;
+  font-size: 3rem;
+  border-bottom: 2px solid red;
+}
+.box_duoi_phai ol {
+  padding-inline-start: 0px;
 }
 
 .chiTietKhoaHoc {
   width: 70vw;
   min-width: 80rem;
   margin: 66vh auto 0;
+  
 }
 .dky {
   display: inline-block;
   height: 3rem;
   background-color: #0f49b6;
-  padding: 1rem;
+  padding: 0.4rem;
   align-content: center;
+  text-align: center;
   font-weight: 700;
-  /* color: #fff; */
+  border-radius: 5px;
+  margin: 0.5rem 2rem 0.5rem -2rem;
+  width: 21.5rem;
+  
+}
+.trial{
+  background-color: rgba(3, 97, 134, 0.808);
 }
 .dky a {
   text-decoration: none;
   color: #fff;
+}
+.dky:hover{
+  background-color: #12ebaa;
 }
 .chiTiet {
   width: 100%;
@@ -358,9 +377,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: 100%;
 }
-.chiTiet h2 {
-  padding-top: 6rem;
-}
+
 .chiTiet p {
   max-width: 50rem;
   font-size: 2.5rem;
