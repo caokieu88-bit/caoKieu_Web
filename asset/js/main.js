@@ -10,8 +10,6 @@
 //   videoPlayer.play();
 // });
 
-
-
 // const hinhs = document.querySelectorAll(".hinh");
 // const boxHienThi = document.querySelector(".box_hien_thi");
 
@@ -27,7 +25,7 @@ const contentContainer = document.getElementById("contentContainer");
 
 let totalBoxes;
 let currentPage = 1;
-const boxesPerPage = 10; // Declare boxesPerPage here
+const boxesPerPage = 8; // Declare boxesPerPage here
 
 function updatePagination() {
   totalBoxes = contentContainer.querySelectorAll(".box").length;
@@ -94,7 +92,9 @@ function showPage(pageNumber) {
 
 function searchContent() {
   const searchTerm = document.getElementById("searchInput").value.toLowerCase();
-  const contentBoxes = document.getElementById("contentContainer").querySelectorAll(".box");
+  const contentBoxes = document
+    .getElementById("contentContainer")
+    .querySelectorAll(".box");
   const noResultElement = document.getElementById("noResult");
 
   let hasResult = false;
@@ -116,3 +116,27 @@ function searchContent() {
     noResultElement.style.display = "none";
   }
 }
+
+const contentDetails = document.querySelectorAll(".content");
+const openContents = document.querySelectorAll(".openContent");
+const closeButtons = document.querySelectorAll(".closeButton");
+
+// Event listeners for opening and closing modal sections
+openContents.forEach((openContent, index) => {
+  openContent.addEventListener("click", function () {
+    const correspondingModal = contentDetails[index]; // Use index for direct access
+    correspondingModal.style.display = "block";
+  });
+});
+
+closeButtons.forEach((closeButton) => {
+  closeButton.addEventListener("click", function () {
+    const closestModal = closeButton.closest(".content");
+    const modalVideo = closestModal.querySelector(".video");
+    closestModal.style.display = "none";
+    if (modalVideo) {
+      // Check if video exists
+      modalVideo.pause();
+    }
+  });
+});

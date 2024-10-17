@@ -16,6 +16,9 @@
   <body>
     <nav>
       <div class="logo">CHIHIRO</div>
+      <marquee behavior="" direction="" scrollamount="7">
+        <p style="font-style: italic; margin: 0; "><strong style="color: red;">Giảm 10%</strong> khi đăng kí 2 khóa cùng lúc</p>
+      </marquee>
       <ul>
         <li class="nav-link"><a href="./index.html">Home</a></li>
         <li class="nav-link"><a href="./khoahoc.html">Khóa Học</a></li>
@@ -23,8 +26,13 @@
         <li class="nav-link"><a href="./lienhe.html">Liên Hệ</a></li>
       </ul>
     </nav>
-    <input type="text" id="searchInput" placeholder="Nhập nội dung tìm kiếm" onkeyup="searchContent()" />
-    
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Nhập nội dung tìm kiếm"
+      onkeyup="searchContent()"
+    />
+
     <div class="pagination">
       <!-- <button id="prevPage">Previous</button> -->
       <div class="page-numbers"></div>
@@ -32,13 +40,117 @@
     </div>
     <div id="contentContainer" class="Container">
       <div class="box">
-        <img src="./asset/img/1-0.png" alt="" />
-        <div class="chitiet">
+        <img
+          class="openContent"
+          data-index="1"
+          src="./asset/img/1-0.png"
+          alt=""
+        />
+        <div class="motasobo">
           <h2>noiDung 1</h2>
 
           <p>Chi tiet noi dung 1</p>
         </div>
       </div>
+      <div class="content" data-index="1" style="display: none">
+        <div class="detail">
+          <video
+            class="video"
+            src="./asset/videos/video1.mp4"
+            controls
+            style="video/mp4"
+          ></video>
+          <h2>Bài học số 1: về....</h2>
+          <p>
+            Mô tả chi tiết... <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+            assumenda natus velit, architecto ut atque unde porro id sit
+            tempore, et praesentium perspiciatis totam laboriosam. Blanditiis
+            facere eveniet architecto laudantium! Omnis unde veniam ipsum velit
+            quis harum iste iusto? Provident neque amet pariatur et debitis,
+            mollitia quibusdam id eos suscipit velit ut autem harum iusto
+            voluptate eum itaque voluptatem. Est. Optio possimus eos
+            praesentium? Dolorem pariatur quae facere! Ab nulla aliquid
+            delectus, itaque eius accusamus incidunt fuga id deserunt nobis
+            odit, maxime dolores. Excepturi eos, impedit recusandae alias ipsam
+            autem! Autem nobis, quo, recusandae expedita in culpa, suscipit
+            tempore perspiciatis quasi aspernatur quae. Perferendis nam
+            explicabo doloremque saepe sed numquam incidunt nostrum placeat
+            officiis, repellat id amet quod fugiat nemo? Alias, non cupiditate
+            soluta vitae officia repudiandae autem nemo aut omnis corporis sunt
+            eius numquam id ipsam dicta dolor accusamus, exercitationem
+            architecto consequuntur. Incidunt, ipsam beatae! Quo vitae nesciunt
+            esse!
+          </p>
+          <button class="closeButton">&times;</button>
+        </div>
+      </div>
+      <div class="box">
+        <img
+          class="openContent"
+          data-index="2"
+          src="./asset/img/1-1.png"
+          alt=""
+        />
+        <div class="motasobo">
+          <h2>noiDung 2</h2>
+
+          <p>Chi tiet noi dung 2</p>
+        </div>
+      </div>
+      <div class="content" data-index="2" style="display: none">
+        <div class="detail">
+          <video
+            class="video"
+            src="./asset/videos/video2.mp4"
+            controls
+            style="video/mp4"
+          ></video>
+          <h2>Bài học số 2: về....</h2>
+          <p>
+            Mô tả chi tiết... <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+            assumenda natus velit, architecto ut atque unde porro id sit
+            tempore, et praesentium perspiciatis totam laboriosam. Blanditiis
+            facere eveniet architecto laudantium! Omnis unde veniam ipsum velit
+            quis harum iste iusto? Provident neque amet pariatur et debitis,
+            mollitia quibusdam id eos suscipit velit ut autem harum iusto
+            voluptate eum itaque voluptatem. Est. Optio possimus eos
+            praesentium? Dolorem pariatur quae facere! Ab nulla aliquid
+            delectus, itaque eius accusamus incidunt fuga id deserunt nobis
+            odit, maxime dolores. Excepturi eos, impedit recusandae alias ipsam
+            autem! Autem nobis, quo, recusandae expedita in culpa, suscipit
+            tempore perspiciatis quasi aspernatur quae. Perferendis nam
+            explicabo doloremque saepe sed numquam incidunt nostrum placeat
+            officiis, repellat id amet quod fugiat nemo? Alias, non cupiditate
+            soluta vitae officia repudiandae autem nemo aut omnis corporis sunt
+            eius numquam id ipsam dicta dolor accusamus, exercitationem
+            architecto consequuntur. Incidunt, ipsam beatae! Quo vitae nesciunt
+            esse!
+          </p>
+          <button class="closeButton">&times;</button>
+        </div>
+      </div>
+      <div class="box">
+        <img
+          class="openContent"
+          data-index="3"
+          src="./asset/img/1-2.png"
+          alt=""
+        />
+        <div class="motasobo">
+          <h2>noiDung 3</h2>
+
+          <p>Chi tiet noi dung 3</p>
+        </div>
+      </div>
+      <div class="content" data-index="3" style="display: none">
+        <div class="detail">
+          <iframe src="./post-share/share.html" frameborder="0"></iframe>
+          <button class="closeButton">&times;</button>
+        </div>
+      </div>
+
       <div class="box">noiDung 2</div>
       <div class="box">noiDung 3</div>
       <div class="box">noiDung 4</div>
